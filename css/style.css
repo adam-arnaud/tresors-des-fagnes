@@ -61,3 +61,31 @@ nav a {
     text-decoration: none;
     font-family: var(--police-texte);
 }
+
+/* Section Hero */
+#hero {
+    background-color: var(--beige-moyen);
+    text-align: center;
+    padding: var(--espacement-l) var(--espacement-m);
+}
+
+#hero h2 {
+    font-family: var(--police-titre);
+    font-size: 2rem;
+    color: var(--brun-fonce);
+    margin-bottom: var(--espacement-m);
+}
+
+#hero p {
+    font-size: 1.1rem;
+    color: var(--brun-doux);
+    margin-bottom: var(--espacement-m);
+}
+
+#hero a {
+    background-color: var(--beige-dore);
+    color: var(--brun-fonce);
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
