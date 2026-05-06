@@ -24,3 +24,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Styles de base */
+body {
+    background-color: var(--beige-clair);
+    color: var(--brun-fonce);
+    font-family: var(--police-texte);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--beige-dore);
+    color: var(--brun-fonce);
+    padding: var(--espacement-s);
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--police-titre);
+    font-size: 2.5rem;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--brun-doux);
+    display: flex;
+    justify-content: center;
+    gap: var(--espacement-m);
+    padding: var(--espacement-s);
+}
+
+nav a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-family: var(--police-texte);
+}
