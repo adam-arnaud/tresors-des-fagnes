@@ -1,0 +1,19 @@
+/* Variables globales */
+:root {
+    /* Couleurs */
+    --beige-clair: #f5ecd7;
+    --beige-moyen: #e8d5b7;
+    --beige-dore: #c4a882;
+    --brun-doux: #8b6f47;
+    --brun-fonce: #4a3728;
+    --blanc: #ffffff;
+
+    /* Typographie */
+    --police-titre: 'Georgia', serif;
+    --police-texte: 'Arial', sans-serif;
+
+    /* Espacements */
+    --espacement-s: 1rem;
+    --espacement-m: 2rem;
+    --espacement-l: 4rem;
+}
