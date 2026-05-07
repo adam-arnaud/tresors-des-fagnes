@@ -300,3 +300,53 @@ footer {
     font-size: 0.85rem;
     color: var(--beige-moyen);
 }
+
+/* =============================
+   RESPONSIVE DESIGN — MOBILE
+   ============================= */
+@media (max-width: 768px) {
+
+    /* Header plus petit */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Navigation en colonne */
+    nav {
+        flex-wrap: wrap;
+        gap: var(--espacement-s);
+    }
+
+    /* Hero moins haut */
+    #hero {
+        padding: var(--espacement-m);
+    }
+
+    /* Filtres galerie en grille */
+    .galerie-filtres {
+        flex-wrap: wrap;
+    }
+
+    /* Galerie 2 colonnes au lieu de 3 */
+    .grille-photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Formulaires en colonne */
+    .formulaires {
+        flex-direction: column;
+    }
+
+    /* Footer en colonne */
+    .footer-contenu {
+        flex-direction: column;
+        gap: var(--espacement-s);
+    }
+}
+
+/* Très petit écran — 1 colonne */
+@media (max-width: 480px) {
+    .grille-photos {
+        grid-template-columns: 1fr;
+    }
+}
