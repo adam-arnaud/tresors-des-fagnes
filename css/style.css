@@ -89,3 +89,24 @@ nav a {
     text-decoration: none;
     border-radius: 4px;
 }
+
+/* Section À propos */
+#a-propos {
+    background-color: var(--beige-clair);
+    padding: var(--espacement-l) var(--espacement-m);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+   
+
+#a-propos h3 {
+    font-family: var(--police-titre);
+    color: var(--brun-doux);
+    margin-top: var(--espacement-m);
+    margin-bottom: var(--espacement-s);
+}
+
+#a-propos p {
+    margin-bottom: var(--espacement-s);
+}
