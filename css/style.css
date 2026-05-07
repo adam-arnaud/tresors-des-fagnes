@@ -254,3 +254,49 @@ textarea {
     font-family: var(--police-texte);
     width: 100%;
 }
+
+/* Footer */
+footer {
+    background-color: var(--brun-fonce);
+    color: var(--beige-clair);
+    padding: var(--espacement-l) var(--espacement-m);
+}
+
+.footer-contenu {
+    display: flex;
+    gap: var(--espacement-m);
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: var(--espacement-m);
+}
+
+.footer-colonne {
+    flex: 1;
+}
+
+.footer-colonne h3 {
+    font-family: var(--police-titre);
+    color: var(--beige-dore);
+    margin-bottom: var(--espacement-s);
+    font-size: 1.1rem;
+}
+
+.footer-colonne p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--beige-moyen);
+}
+
+.footer-colonne a {
+    color: var(--beige-dore);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: var(--espacement-s);
+    border-top: 1px solid var(--brun-doux);
+    font-size: 0.85rem;
+    color: var(--beige-moyen);
+}
