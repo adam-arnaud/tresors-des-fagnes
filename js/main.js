@@ -15,11 +15,11 @@ boutons.forEach(function(bouton) {
 
         photos.forEach(function(photo) {
             if (categorie === 'tous') {
-                photo.style.display = 'block';
+                photo.classList.remove('cache');
             } else if (photo.dataset.categorie === categorie) {
-                photo.style.display = 'block';
+                photo.classList.remove('cache');
             } else {
-                photo.style.display = 'none';
+                photo.classList.add('cache');
             }
         });
 

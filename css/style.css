@@ -143,6 +143,14 @@ nav a {
     margin-bottom: var(--espacement-m);
 }
 
+.galerie-item {
+    display: block;
+}
+
+.galerie-item.cache {
+    display: none;
+}
+
 .filtre {
     background-color: var(--beige-clair);
     color: var(--brun-fonce);
