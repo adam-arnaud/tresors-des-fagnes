@@ -72,6 +72,7 @@ nav a {
     color: var(--blanc);
     text-decoration: none;
     font-family: var(--police-texte);
+     transition: color 0.3s ease;
 }
 
 /* Section Hero */
@@ -179,6 +180,7 @@ nav a {
     height: 250px;
     object-fit: cover;
     border-radius: 4px;
+    transition: transform 0.3s ease;
 }
 
 /* Section Contact & Réservations */
@@ -299,6 +301,49 @@ footer {
     border-top: 1px solid var(--brun-doux);
     font-size: 0.85rem;
     color: var(--beige-moyen);
+}
+
+/* =============================
+   EFFETS HOVER
+   ============================= */
+
+/* Navigation */
+nav a:hover {
+    color: var(--beige-dore);
+    transition: color 0.3s ease;
+}
+
+/* Bouton hero */
+#hero a:hover {
+    background-color: var(--brun-doux);
+    color: var(--blanc);
+    transition: all 0.3s ease;
+}
+
+/* Boutons filtres */
+.filtre:hover {
+    background-color: var(--beige-dore);
+    transition: all 0.3s ease;
+}
+
+/* Photos galerie */
+.galerie-item:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Boutons formulaires */
+.formulaire-contact button:hover,
+.formulaire-reservation button:hover {
+    background-color: var(--brun-doux);
+    color: var(--blanc);
+    transition: all 0.3s ease;
+}
+
+/* Liens footer */
+.footer-colonne a:hover {
+    color: var(--blanc);
+    transition: color 0.3s ease;
 }
 
 /* =============================
