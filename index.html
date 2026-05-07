@@ -75,9 +75,77 @@
             <section id="galerie">
                 <!--Photos parents - chatons dispo- portée précédente  -->
                 <h2>Galerie</h2>
-                <button>parents</button>
-                <button>Anciennes portées</button>
-                <button>Chatons disponibles</button>
+
+                <!-- Boutons filtres - boîte 1 -->
+                <div class="galerie-filtres">
+                    <button class="filtre actif" data-filtre="tous">Tous</button>
+                    <button class="filtre" data-filtre="parents">Parents</button>
+                    <button class="filtre" data-filtre="portees">Anciennes portées</button>
+                    <button class="filtre" data-filtre="chatons">Chatons disponibles</button>
+                </div>
+
+                <!-- Grille des photos - boîte 2 -->
+                <div class="grille-photos">
+                    <!-- Parents : Blue -->
+                    <div class="galerie-item" data-categorie="parents">
+                        <img src="images/parents/parent-blue.jpg" 
+                            alt="blue - père Sacré de Birmanie blue">
+                    </div>
+                    <div class="galerie-item" data-categorie="parents">
+                        <img src="images/parents/parent-blue-1.jpg"
+                            alt="blue - père Sacré de Birmanie blue">
+                    </div>
+                    <div class="galerie-item" data-categorie="parents">
+                        <img src="images/parents/parent-blue-2.jpg"
+                            alt="blue - père de Sacré de Birmanie">
+                    <!-- Parents : Tokyo -->
+                    </div>
+                    <div class="galerie-item" data-categorie="parents">
+                        <img src="images/parents/parent-tokyo.jpg" 
+                            alt="Tokyo - mère Sacré de Birmanie Lilac">
+                    </div>
+                    <div class="galerie-item" data-categorie="parents">
+                        <img src="images/parents/parent-tokyo-1.jpg" 
+                            alt="Tokyo - mère Sacré de Birmanie Lilac">
+                    </div>
+                    <div class="galerie-item" data-categorie="parents">
+                        <img src="images/parents/parent-tokyo-2.jpg" 
+                            alt="Tokyo - mère Sacré de Birmanie Lilac">
+                    </div>
+
+                    <!-- Anciennes portées -->
+                    <div class="galerie-item" data-categorie="portees">
+                        <img src="images/anciennes-portees/portees-precedentes.jpg"
+                             alt="Ancienne portée Trésors des Fagnes">
+                    </div>
+                    <div class="galerie-item" data-categorie="portees">
+                        <img src="images/anciennes-portees/portees-precedentes-1.jpg"
+                            alt="Ancienne portée Trésors des Fagnes">
+                    </div>
+                    <div class="galerie-item" data-categorie="portees">
+                        <img src="images/anciennes-portees/portees-precedentes-2.jpg" 
+                            alt="Ancienne portée Trésors des Fagnes">
+                    </div>
+                    <div class="galerie-item" data-categorie="portees">
+                        <img src="images/anciennes-portees/portees-precedentes-3.jpg" 
+                            alt="Ancienne portée Trésors des Fagnes">
+                    </div>
+                    <!-- Chatons disponibles -->
+                    <div class="galerie-item" data-categorie="chatons">
+                            <img src="images/chatons-disponibles/chaton-mush.jpg" 
+                                alt="Mushù - chaton disponible">
+                    </div>
+                    <div class="galerie-item" data-categorie="chatons">
+                        <img src="images/chatons-disponibles/chaton-mush1.jpg" 
+                            alt="Mushù - chaton disponible">
+                    </div>
+                    <div class="galerie-item" data-categorie="chatons">
+                        <img src="images/chatons-disponibles/chaton-mush2.jpg" 
+                            alt="Mushù - chaton disponible">
+                    </div>
+                </div>
+                <!-- Fin de grille-photos -->
+ 
 
             </section>
 
