@@ -357,32 +357,45 @@ nav a:hover {
    EMPREINTES DE PATTES
    ============================= */
 
+/* Empreintes fixes — À propos */
+.empreintes-decoration {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: var(--espacement-s) 0;
+    color: var(--beige-dore);
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+
 /* Empreintes animées — Hero */
 .empreintes-hero {
-    position: relative;
-    height: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
     margin-top: var(--espacement-m);
+    height: 60px;
+    align-items: center;
 }
 
 .empreinte {
-    position: absolute;
     color: var(--brun-doux);
-    opacity: 0;
     font-size: 1.5rem;
-    bottom: 0;
+    opacity: 0;
+    animation: marche 3s infinite ease-in-out;
 }
 
-.empreinte-1 { left: 5%;  animation: marche 4s infinite 0s; }
-.empreinte-2 { left: 25%; animation: marche 4s infinite 0.6s; }
-.empreinte-3 { left: 45%; animation: marche 4s infinite 1.2s; }
-.empreinte-4 { left: 65%; animation: marche 4s infinite 1.8s; }
-.empreinte-5 { left: 85%; animation: marche 4s infinite 2.4s; }
+.empreinte-1 { animation-delay: 0s; }
+.empreinte-2 { animation-delay: 0.5s; }
+.empreinte-3 { animation-delay: 1s; }
+.empreinte-4 { animation-delay: 1.5s; }
+.empreinte-5 { animation-delay: 2s; }
 
 @keyframes marche {
-    0%   { opacity: 0; transform: translateY(20px) rotate(-20deg); }
-    30%  { opacity: 0.7; transform: translateY(0) rotate(-20deg); }
-    70%  { opacity: 0.7; transform: translateY(0) rotate(-20deg); }
-    100% { opacity: 0; transform: translateY(-20px) rotate(-20deg); }
+    0%   { opacity: 0; transform: scale(0.5) rotate(-20deg); }
+    40%  { opacity: 0.8; transform: scale(1) rotate(-20deg); }
+    60%  { opacity: 0.8; transform: scale(1) rotate(-20deg); }
+    100% { opacity: 0; transform: scale(0.5) rotate(-20deg); }
 }
 
 /* =============================
