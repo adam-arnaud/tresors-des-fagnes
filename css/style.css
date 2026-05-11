@@ -354,6 +354,47 @@ nav a:hover {
 }
 
 /* =============================
+   EMPREINTES DE PATTES
+   ============================= */
+
+/* Empreintes fixes — À propos */
+.empreintes-decoration {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: var(--espacement-s) 0;
+    color: var(--beige-dore);
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+
+/* Empreintes animées — Hero */
+.empreintes-hero {
+    position: relative;
+    height: 60px;
+    margin-top: var(--espacement-m);
+    overflow: hidden;
+}
+
+.empreinte {
+    position: absolute;
+    color: var(--brun-doux);
+    opacity: 0;
+    font-size: 1.5rem;
+    animation: marche 4s infinite;
+    animation-delay: calc(var(--i) * 0.6s);
+    bottom: 0;
+    left: calc(var(--i) * 18%);
+}
+
+@keyframes marche {
+    0%   { opacity: 0; transform: translateY(20px) rotate(-20deg); }
+    30%  { opacity: 0.7; transform: translateY(0) rotate(-20deg); }
+    70%  { opacity: 0.7; transform: translateY(0) rotate(-20deg); }
+    100% { opacity: 0; transform: translateY(-20px) rotate(-20deg); }
+}
+
+/* =============================
    RESPONSIVE DESIGN — MOBILE
    ============================= */
 @media (max-width: 768px) {
