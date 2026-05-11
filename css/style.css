@@ -217,7 +217,7 @@ nav a:hover {
 /* Cartes photos */
 .galerie-item {
     display: block;
-    background-color: var(--blanc);
+    background-color: var(--brun-fonce); /* ← change le blanc en brun foncé */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(74, 55, 40, 0.15);
@@ -231,6 +231,7 @@ nav a:hover {
 
 .galerie-item.cache {
     display: none;
+    
 }
 
 .galerie-item img {
@@ -244,9 +245,11 @@ nav a:hover {
 .galerie-item .legende {
     padding: 0.6rem;
     font-size: 0.85rem;
-    color: var(--brun-doux);
+    color: var(--beige-clair);
+    background-color: var(--brun-fonce);
     font-family: var(--police-titre);
     font-style: italic;
+    text-align: center;
 }
 
 /* =============================
