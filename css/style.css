@@ -3,10 +3,10 @@
     /* Couleurs */
     --beige-clair: #f5ecd7;
     --beige-moyen: #e8d5b7;
-    --beige-dore: #c4a882;
-    --brun-doux: #8b6f47;
-    --brun-fonce: #4a3728;
-    --blanc: #ffffff;
+    --beige-dore:  #c4a882;
+    --brun-doux:   #8b6f47;
+    --brun-fonce:  #4a3728;
+    --blanc:       #ffffff;
 
     /* Typographie */
     --police-titre: 'Georgia', serif;
@@ -18,8 +18,9 @@
     --espacement-l: 4rem;
 }
 
-/* Reset CSS */
-
+/* =============================
+   RESET CSS
+   ============================= */
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +32,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Styles de base */
+/* =============================
+   STYLES DE BASE
+   ============================= */
 body {
     background-color: var(--beige-clair);
     color: var(--brun-fonce);
@@ -39,14 +42,17 @@ body {
     line-height: 1.6;
 }
 
+/* =============================
+   HEADER
+   ============================= */
 header {
     background-color: var(--beige-dore);
     color: var(--brun-fonce);
     padding: var(--espacement-s);
     text-align: center;
-    position: sticky;  /* reste visible en scrollant */
-    top: 0;            /* collé en haut */
-    z-index: 100;      /* toujours au-dessus des autres éléments */
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header h1 {
@@ -56,26 +62,34 @@ header h1 {
     letter-spacing: 0.1em;
 }
 
-/* Navigation */
+/* =============================
+   NAVIGATION
+   ============================= */
 nav {
     background-color: var(--brun-doux);
     display: flex;
     justify-content: center;
     gap: var(--espacement-m);
     padding: var(--espacement-s);
-    position: sticky;  /* reste visible en scrollant */
-    top: 0;            /* collé en haut */
-    z-index: 100;      /* toujours au-dessus */
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav a {
     color: var(--blanc);
     text-decoration: none;
     font-family: var(--police-texte);
-     transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-/* Section Hero */
+nav a:hover {
+    color: var(--beige-dore);
+}
+
+/* =============================
+   SECTION HERO
+   ============================= */
 #hero {
     background-color: var(--beige-moyen);
     text-align: center;
@@ -101,9 +115,17 @@ nav a {
     padding: 0.8rem 2rem;
     text-decoration: none;
     border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-/* Section À propos */
+#hero a:hover {
+    background-color: var(--brun-doux);
+    color: var(--blanc);
+}
+
+/* =============================
+   SECTION À PROPOS
+   ============================= */
 #a-propos {
     background-color: var(--beige-clair);
     padding: var(--espacement-l) var(--espacement-m);
@@ -111,12 +133,6 @@ nav a {
     margin: auto;
     text-align: center;
 }
-
-#a-propos .contenu {
-    max-width: 800px;
-    margin: auto;
-}
-   
 
 #a-propos h3 {
     font-family: var(--police-titre);
@@ -129,11 +145,31 @@ nav a {
     margin-bottom: var(--espacement-s);
 }
 
-/* Section Galerie */
+/* =============================
+   SECTION GALERIE
+   ============================= */
 #galerie {
     background-color: var(--beige-moyen);
     padding: var(--espacement-l) var(--espacement-m);
     text-align: center;
+}
+
+/* Titre décoratif */
+#galerie h2 {
+    font-family: var(--police-titre);
+    font-size: 2rem;
+    color: var(--brun-fonce);
+    margin-bottom: 0.5rem;
+}
+
+#galerie h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--beige-dore);
+    margin: 0.5rem auto var(--espacement-m);
+    border-radius: 2px;
 }
 
 /* Boutons filtres */
@@ -144,14 +180,6 @@ nav a {
     margin-bottom: var(--espacement-m);
 }
 
-.galerie-item {
-    display: block;
-}
-
-.galerie-item.cache {
-    display: none;
-}
-
 .filtre {
     background-color: var(--beige-clair);
     color: var(--brun-fonce);
@@ -159,6 +187,11 @@ nav a {
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtre:hover {
+    background-color: var(--beige-dore);
 }
 
 .filtre.actif {
@@ -166,7 +199,6 @@ nav a {
     color: var(--brun-fonce);
 }
 
-/* Bouton désactivé */
 .filtre.desactive {
     opacity: 0.4;
     cursor: not-allowed;
@@ -182,15 +214,44 @@ nav a {
     margin: auto;
 }
 
+/* Cartes photos */
+.galerie-item {
+    display: block;
+    background-color: var(--blanc);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(74, 55, 40, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galerie-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(74, 55, 40, 0.25);
+}
+
+.galerie-item.cache {
+    display: none;
+}
+
 .galerie-item img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius: 4px;
-    transition: transform 0.3s ease;
+    display: block;
 }
 
-/* Section Contact & Réservations */
+/* Légende */
+.galerie-item .legende {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--brun-doux);
+    font-family: var(--police-titre);
+    font-style: italic;
+}
+
+/* =============================
+   SECTION CONTACT & RÉSERVATIONS
+   ============================= */
 #contact-reservations {
     background-color: var(--beige-clair);
     padding: var(--espacement-l) var(--espacement-m);
@@ -202,7 +263,6 @@ nav a {
     margin-bottom: var(--espacement-m);
 }
 
-/* Conteneur des deux formulaires côte à côte */
 .formulaires {
     display: flex;
     gap: var(--espacement-m);
@@ -210,7 +270,6 @@ nav a {
     margin: auto;
 }
 
-/* Chaque formulaire */
 .formulaire-contact,
 .formulaire-reservation {
     flex: 1;
@@ -227,7 +286,6 @@ nav a {
     margin-bottom: var(--espacement-s);
 }
 
-/* Champs du formulaire */
 label {
     display: block;
     color: var(--brun-doux);
@@ -262,9 +320,18 @@ textarea {
     cursor: pointer;
     font-family: var(--police-texte);
     width: 100%;
+    transition: all 0.3s ease;
 }
 
-/* Footer */
+.formulaire-contact button:hover,
+.formulaire-reservation button:hover {
+    background-color: var(--brun-doux);
+    color: var(--blanc);
+}
+
+/* =============================
+   FOOTER
+   ============================= */
 footer {
     background-color: var(--brun-fonce);
     color: var(--beige-clair);
@@ -300,6 +367,11 @@ footer {
     color: var(--beige-dore);
     text-decoration: none;
     font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-colonne a:hover {
+    color: var(--blanc);
 }
 
 .footer-copyright {
@@ -308,49 +380,6 @@ footer {
     border-top: 1px solid var(--brun-doux);
     font-size: 0.85rem;
     color: var(--beige-moyen);
-}
-
-/* =============================
-   EFFETS HOVER
-   ============================= */
-
-/* Navigation */
-nav a:hover {
-    color: var(--beige-dore);
-    transition: color 0.3s ease;
-}
-
-/* Bouton hero */
-#hero a:hover {
-    background-color: var(--brun-doux);
-    color: var(--blanc);
-    transition: all 0.3s ease;
-}
-
-/* Boutons filtres */
-.filtre:hover {
-    background-color: var(--beige-dore);
-    transition: all 0.3s ease;
-}
-
-/* Photos galerie */
-.galerie-item:hover img {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-/* Boutons formulaires */
-.formulaire-contact button:hover,
-.formulaire-reservation button:hover {
-    background-color: var(--brun-doux);
-    color: var(--blanc);
-    transition: all 0.3s ease;
-}
-
-/* Liens footer */
-.footer-colonne a:hover {
-    color: var(--blanc);
-    transition: color 0.3s ease;
 }
 
 /* =============================
@@ -403,45 +432,41 @@ nav a:hover {
    ============================= */
 @media (max-width: 768px) {
 
-    /* Header plus petit */
     header h1 {
         font-size: 1.8rem;
     }
 
-    /* Navigation en colonne */
     nav {
         flex-wrap: wrap;
         gap: var(--espacement-s);
     }
 
-    /* Hero moins haut */
     #hero {
         padding: var(--espacement-m);
     }
 
-    /* Filtres galerie en grille */
+    #hero h2 {
+        font-size: 1.5rem;
+    }
+
     .galerie-filtres {
         flex-wrap: wrap;
     }
 
-    /* Galerie 2 colonnes au lieu de 3 */
     .grille-photos {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Formulaires en colonne */
     .formulaires {
         flex-direction: column;
     }
 
-    /* Footer en colonne */
     .footer-contenu {
         flex-direction: column;
         gap: var(--espacement-s);
     }
 }
 
-/* Très petit écran — 1 colonne */
 @media (max-width: 480px) {
     .grille-photos {
         grid-template-columns: 1fr;
