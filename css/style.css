@@ -109,18 +109,42 @@ nav a:hover {
     margin-bottom: var(--espacement-m);
 }
 
-#hero a {
+/* Bouton hero - état normal */
+#btn-chatons {
     background-color: var(--beige-dore);
     color: var(--brun-fonce);
     padding: 0.8rem 2rem;
-    text-decoration: none;
+    border: none;
     border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--police-texte);
+    font-size: 1rem;
     transition: all 0.3s ease;
 }
 
-#hero a:hover {
+#btn-chatons:hover:not(:disabled) {
     background-color: var(--brun-doux);
     color: var(--blanc);
+}
+
+/* Bouton hero - état désactivé */
+#btn-chatons:disabled {
+    background-color: #a0a0a0;
+    color: #e0e0e0;
+    border-color: #a0a0a0;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#msg-repos {
+    margin-top: 0.8rem;
+    font-style: italic;
+    color: var(--brun-doux);
+    font-size: 0.95rem;
+}
+
+#msg-repos.cache {
+    display: none;
 }
 
 /* =============================

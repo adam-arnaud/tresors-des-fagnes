@@ -25,3 +25,35 @@ boutons.forEach(function(bouton) {
 
     });
 });
+
+// --- Bouton "Voir les Chatons" ---
+const btnChatons = document.getElementById("btn-chatons");
+const chatonsDispo = document.querySelectorAll('[data-categorie="chatons"]');
+
+if (chatonsDispo.length === 0) {
+    btnChatons.disabled = true;
+    btnChatons.title = "Aucun chaton disponible pour le moment";
+} else {
+    document.getElementById("msg-repos").classList.add("cache");
+    btnChatons.addEventListener("click", function () {
+        // Désactive tous les filtres
+        boutons.forEach(function (b) {
+            b.classList.remove("actif");
+        });
+
+        // Active le filtre "chatons"
+        document.querySelector('[data-filtre="chatons"]').classList.add("actif");
+
+        // Affiche seulement les chatons disponibles
+        photos.forEach(function (photo) {
+            if (photo.dataset.categorie === "chatons") {
+                photo.classList.remove("cache");
+            } else {
+                photo.classList.add("cache");
+            }
+        });
+
+        // Défile vers la galerie
+        document.getElementById("galerie").scrollIntoView({ behavior: "smooth" });
+    });
+}
