@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trésors des Fagnes</title>
     <link rel="stylesheet" href="css/style.css">
-     <!-- Font Awesome — icônes -->
+    <!-- Font Awesome — icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+    <div id="banniere">
+        🐱 Prochaine portée prévue au printemps 2026 — <a href="#contact-reservations">Préinscris-toi ici</a>
+    </div>
 
     <header>
         <h1>Trésors des Fagnes</h1>
@@ -25,19 +28,14 @@
     </nav>
 
     <main>
-       
-
-
 
         <section id="hero">
-            <!--Section d'accueil - titre et photo principal  -->
             <h2>Chatterie familiale Trésors des Fagnes</h2>
             <p>Élevés avec amour au cœur des Fagnes belges, nos chatons Sacré de Birmanie grandissent dans un
                 environnement familial, calme et attentionné.</p>
             <button id="btn-chatons" class="btn-hero">Voir les Chatons</button>
             <p id="msg-repos">🐱 La maman se repose...</p>
 
-            <!-- Empreintes animées -->
             <div class="empreintes-hero">
                 <i class="fa-solid fa-paw empreinte empreinte-1"></i>
                 <i class="fa-solid fa-paw empreinte empreinte-2"></i>
@@ -45,15 +43,16 @@
                 <i class="fa-solid fa-paw empreinte empreinte-4"></i>
                 <i class="fa-solid fa-paw empreinte empreinte-5"></i>
             </div>
-
-
         </section>
 
+        <!-- Séparateur -->
+        <div class="separateur">
+            <i class="fa-solid fa-paw"></i>
+        </div>
+
         <section id="a-propos">
-            <!--Histoire de la chatterie  -->
             <h2>Histoire de la chatterie</h2>
 
-             <!-- Empreintes fixes décoratives -->
             <div class="empreintes-decoration">
                 <i class="fa-solid fa-paw"></i>
                 <i class="fa-solid fa-paw"></i>
@@ -86,19 +85,17 @@
                 vaccinés, vermifugés et accompagnés des documents nécessaires.
                 Nous restons disponibles après l'adoption pour accompagner
                 les familles tout au long de la vie du chaton. 😊</p>
-
-
-
-
-
-
         </section>
 
+        <!-- Séparateur -->
+        <div class="separateur">
+            <i class="fa-solid fa-paw"></i>
+        </div>
+
         <section id="galerie">
-            <!--Photos parents - chatons dispo- portée précédente  -->
             <h2>Galerie</h2>
 
-            <!-- Boutons filtres - boîte 1 -->
+            <!-- Boutons filtres -->
             <div class="galerie-filtres">
                 <button class="filtre actif" data-filtre="tous">Tous</button>
                 <button class="filtre" data-filtre="parents">Parents</button>
@@ -107,193 +104,188 @@
                 <button class="filtre" data-filtre="famille">Chats de la famille</button>
             </div>
 
-            <!-- Grille des photos - boîte 2 -->
+            <!-- Grille des photos -->
             <div class="grille-photos">
+
+                <!-- Parents -->
                 <div class="galerie-item" data-categorie="parents">
                     <img src="images/parents/parent-tokyo.jpg" alt="Tokyo - mère Sacré de Birmanie Lilac">
-                <p class="legende">Tokyo - Mère Birmane Lilac</p>
+                    <p class="legende">Tokyo - Mère Birmane Lilac</p>
                 </div>
                 <div class="galerie-item" data-categorie="parents">
                     <img src="images/parents/parent-aloys.jpg" alt="Aloys - Future Maman de Sacré de Birmanie">
-                <p class="legende">Aloys - Future Maman Birmane chocolate</p>
+                    <p class="legende">Aloys - Future Maman Birmane chocolate</p>
                 </div>
                 <div class="galerie-item" data-categorie="parents">
-                    <img src="images/parents/parent-blue.jpg" alt="blue - père Sacré de Birmanie blue">
+                    <img src="images/parents/parent-blue.jpg" alt="Blue - père Sacré de Birmanie blue">
                     <p class="legende">Blue - Père Birman Blue</p>
                 </div>
                 <div class="galerie-item" data-categorie="parents">
                     <img src="images/parents/parent-tokyo-1.jpg" alt="Tokyo - mère Sacré de Birmanie Lilac">
-                <p class="legende">Tockyo - Mère Birmane</p>
+                    <p class="legende">Tokyo - Mère Birmane</p>
                 </div>
                 <div class="galerie-item" data-categorie="parents">
-                    <img src="images/parents/parent-blue-1.jpg" alt="blue - père Sacré de Birmanie blue">
-                <p class="legende">Blue - Père Birman blue</p>
+                    <img src="images/parents/parent-blue-1.jpg" alt="Blue - père Sacré de Birmanie blue">
+                    <p class="legende">Blue - Père Birman Blue</p>
                 </div>
                 <div class="galerie-item" data-categorie="parents">
                     <img src="images/parents/parent-tokyo-2.jpg" alt="Tokyo - mère Sacré de Birmanie Lilac">
-                <p class="legende">Tockyo - Mère Birmane</p>
+                    <p class="legende">Tokyo - Mère Birmane</p>
                 </div>
 
                 <!-- Anciennes portées -->
                 <div class="galerie-item" data-categorie="portees">
                     <img src="images/anciennes-portees/portees-precedentes.jpg" alt="Ancienne portée Trésors des Fagnes">
-                <p class="legende">a compléter</p>
+                    <p class="legende">à compléter</p>
                 </div>
                 <div class="galerie-item" data-categorie="portees">
                     <img src="images/anciennes-portees/portees-precedentes-1.jpg" alt="Ancienne portée Trésors des Fagnes">
-                <p class="legende">a compléter</p>
+                    <p class="legende">à compléter</p>
                 </div>
                 <div class="galerie-item" data-categorie="portees">
                     <img src="images/anciennes-portees/portees-precedentes-2.jpg" alt="Ancienne portée Trésors des Fagnes">
-                <p class="legende">a compléter</p>
+                    <p class="legende">à compléter</p>
                 </div>
                 <div class="galerie-item" data-categorie="portees">
                     <img src="images/anciennes-portees/portees-precedentes-3.jpg" alt="Ancienne portée Trésors des Fagnes">
-                <p class="legende">a compléter</p>
+                    <p class="legende">à compléter</p>
                 </div>
                 <div class="galerie-item" data-categorie="portees">
-                    <img src="images/anciennes-portees/portees-precedentes-4.jpg" alt="Ancienne portée Trésors de Fagnes">
-                <p class="legende">a compléter</p>
+                    <img src="images/anciennes-portees/portees-precedentes-4.jpg" alt="Ancienne portée Trésors des Fagnes">
+                    <p class="legende">à compléter</p>
                 </div>
                 <div class="galerie-item" data-categorie="portees">
-                    <img src="images/anciennes-portees/portees-precedentes-5.jpg" alt="Ancienne portée Trésors de Fagnes">
-                <p class="legende">a compléter</p>
+                    <img src="images/anciennes-portees/portees-precedentes-5.jpg" alt="Ancienne portée Trésors des Fagnes">
+                    <p class="legende">à compléter</p>
                 </div>
                 <div class="galerie-item" data-categorie="portees">
-                    <img src="images/anciennes-portees/portees-precedentes-6.jpg" alt="Ancienne portée Trésors de Fagnes">
-                <p class="legende">a compléter</p>
+                    <img src="images/anciennes-portees/portees-precedentes-6.jpg" alt="Ancienne portée Trésors des Fagnes">
+                    <p class="legende">à compléter</p>
                 </div>
                 <div class="galerie-item" data-categorie="portees">
-                    <img src="images/anciennes-portees/portees-precedentes-7.jpg" alt="Ancienne portée Trésors de Fagnes">
-                <p class="legende">a compléter</p>
+                    <img src="images/anciennes-portees/portees-precedentes-7.jpg" alt="Ancienne portée Trésors des Fagnes">
+                    <p class="legende">à compléter</p>
                 </div>
                 <div class="galerie-item" data-categorie="portees">
-                    <img src="images/anciennes-portees/portees-precedentes-8.jpg" alt="Ancienne portée Trésors de Fagnes">
-                <p class="legende">a compléter</p>
+                    <img src="images/anciennes-portees/portees-precedentes-8.jpg" alt="Ancienne portée Trésors des Fagnes">
+                    <p class="legende">à compléter</p>
                 </div>
                 <div class="galerie-item" data-categorie="portees">
-                    <img src="images/anciennes-portees/portees-precedentes-9.jpg" alt="Ancienne portée Trésors de Fagnes">
-                <p class="legende">a compléter</p>
+                    <img src="images/anciennes-portees/portees-precedentes-9.jpg" alt="Ancienne portée Trésors des Fagnes">
+                    <p class="legende">à compléter</p>
                 </div>
-
 
                 <!-- Chatons disponibles -->
-                
 
                 <!-- Chats de la famille -->
                 <div class="galerie-item" data-categorie="famille">
                     <img src="images/famille/famille-chat-aloys.jpg" alt="chat de la famille">
-                <p class="legende">Aloys - Une future maman pleine de douceur — Birmane seal point</p>
+                    <p class="legende">Aloys - Une future maman pleine de douceur — Birmane seal point</p>
                 </div>
                 <div class="galerie-item" data-categorie="famille">
                     <img src="images/famille/famille-chat-aloys1.jpg" alt="chat de la famille">
-                <p class="legende">Aloys</p>
-                </div>
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-blue.jpg" alt="chat de la famille">
-                <p class="legende">Blue</p>
-                </div>
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-blue1.jpg" alt="chat de la famille">
-                <p class="legende">Blue</p>
-                </div>
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-mushu.jpg" alt="chat de la famille">
-                <p class="legende">Mushù</p>
-                </div>
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-tokyo-aloys.jpg" alt="chat de la famille">
-                <p class="legende">Tokyo et sa fille Aloys </p>
-                </div>
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-tokyo.jpg" alt="chat de la famille">
-                <p class="legende">Tokyo</p>
-                </div>
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-tokyo1.jpg" alt="chat de la famille">
-                <p class="legende">Tokyo</p>
-                </div>
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-tokyo2.jpg" alt="chat de la famille">
-                <p class="legende">Tokyo</p>
-                </div>
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-venus.jpg" alt="chat de la famille">
-                <p class="legende">Vénus</p>
-                </div>
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-mushu1.jpg" alt="chat de la famille">
-                <p class="legende">Mushù</p>
-                </div>
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-mushu2.jpg" alt="chat de la famille">
-                <p class="legende">Mushù</p>
-                </div>
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-mushu3.jpg" alt="chat de la famille">
-                <p class="legende">Mushù 😂</p>
+                    <p class="legende">Aloys</p>
                 </div>
                 <div class="galerie-item" data-categorie="famille">
                     <img src="images/famille/famille-chat-aloys2.jpg" alt="chat de la famille">
-                    <p class="legende">Aloys</p> 
+                    <p class="legende">Aloys</p>
                 </div>
                 <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-arbre.jpg" alt="chat de la famille">
-                <p class="legende">Pause sur l'arbre</p>
-                </div>    
-                <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-blue-venus.jpg" alt="chat de la famille">
-                <p class="legende">Blue et Vénus</p>
+                    <img src="images/famille/famille-chat-blue.jpg" alt="chat de la famille">
+                    <p class="legende">Blue</p>
                 </div>
                 <div class="galerie-item" data-categorie="famille">
-                    <img src="images/famille/famille-chat-blue2.jpg" alt="chat de la fammile">
-                <p class="legende">blue</p>
+                    <img src="images/famille/famille-chat-blue1.jpg" alt="chat de la famille">
+                    <p class="legende">Blue</p>
+                </div>
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-blue2.jpg" alt="chat de la famille">
+                    <p class="legende">Blue</p>
                 </div>
                 <div class="galerie-item" data-categorie="famille">
                     <img src="images/famille/famille-chat-blue3.jpg" alt="chat de la famille">
-                <p class="legende">Blue</p>
+                    <p class="legende">Blue</p>
                 </div>
                 <div class="galerie-item" data-categorie="famille">
                     <img src="images/famille/famille-chat-blue4.jpg" alt="chat de la famille">
-                <p class="legende">Blue</p>
+                    <p class="legende">Blue</p>
+                </div>
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-blue-venus.jpg" alt="chat de la famille">
+                    <p class="legende">Blue et Vénus</p>
+                </div>
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-mushu.jpg" alt="chat de la famille">
+                    <p class="legende">Mushù</p>
+                </div>
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-mushu1.jpg" alt="chat de la famille">
+                    <p class="legende">Mushù</p>
+                </div>
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-mushu2.jpg" alt="chat de la famille">
+                    <p class="legende">Mushù</p>
+                </div>
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-mushu3.jpg" alt="chat de la famille">
+                    <p class="legende">Mushù 😂</p>
                 </div>
                 <div class="galerie-item" data-categorie="famille">
                     <img src="images/famille/famille-chat-mushu4.jpg" alt="chat de la famille">
-                <p class="legende">Mushù</p>
+                    <p class="legende">Mushù</p>
+                </div>
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-tokyo.jpg" alt="chat de la famille">
+                    <p class="legende">Tokyo</p>
+                </div>
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-tokyo1.jpg" alt="chat de la famille">
+                    <p class="legende">Tokyo</p>
+                </div>
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-tokyo2.jpg" alt="chat de la famille">
+                    <p class="legende">Tokyo</p>
+                </div>
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-tokyo-aloys.jpg" alt="chat de la famille">
+                    <p class="legende">Tokyo et sa fille Aloys</p>
                 </div>
                 <div class="galerie-item" data-categorie="famille">
                     <img src="images/famille/famille-chat-tokyo-aloys-blue.jpg" alt="chat de la famille">
-                <p class="legende">Tokyo - Aloys - Blue</p>
+                    <p class="legende">Tokyo - Aloys - Blue</p>
                 </div>
                 <div class="galerie-item" data-categorie="famille">
                     <img src="images/famille/famille-chat-tokyo-mushu.jpg" alt="chat de la famille">
-                <p class="legende">Tokyo - Mushù</p>
+                    <p class="legende">Tokyo - Mushù</p>
                 </div>
                 <div class="galerie-item" data-categorie="famille">
                     <img src="images/famille/famille-chat-tokyo-venus.jpg" alt="chat de la famille">
-                <p class="legende">Tokyo - Vénus</p>
+                    <p class="legende">Tokyo - Vénus</p>
+                </div>
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-venus.jpg" alt="chat de la famille">
+                    <p class="legende">Vénus</p>
                 </div>
                 <div class="galerie-item" data-categorie="famille">
                     <img src="images/famille/famille-chat-venus1.jpg" alt="chat de la famille">
-                <p class="legende">Vénus</p>
+                    <p class="legende">Vénus</p>
                 </div>
-
-                 
-
-
-
-
-
-
+                <div class="galerie-item" data-categorie="famille">
+                    <img src="images/famille/famille-chat-arbre.jpg" alt="chat de la famille">
+                    <p class="legende">Pause sur l'arbre</p>
+                </div>
 
             </div>
             <!-- Fin de grille-photos -->
 
-
         </section>
 
+        <!-- Séparateur -->
+        <div class="separateur">
+            <i class="fa-solid fa-paw"></i>
+        </div>
+
         <section id="contact-reservations">
-            <!-- Contact - réservations -->
             <h2>Contact & Réservations</h2>
 
             <div class="formulaires">
@@ -328,7 +320,6 @@
                         <label for="resa-tel">Votre téléphone</label>
                         <input type="tel" id="resa-tel" name="telephone" placeholder="Votre numéro">
 
-
                         <label for="resa-message">Votre message</label>
                         <textarea id="resa-message" name="message"
                             placeholder="Parlez-nous de votre projet..."></textarea>
@@ -337,35 +328,33 @@
                     </form>
                 </div>
 
+            </div>
 
         </section>
 
     </main>
 
     <footer>
-        <!-- Footer Trésors des Fagnes -->
         <div class="footer-contenu">
 
-            <!-- Colonne1 : chatterie -->
             <div class="footer-colonne">
                 <h3>Trésors des Fagnes</h3>
                 <p>Chatterie familiale de Sacré de Birmanie</p>
                 <p><i class="fa-solid fa-location-dot"></i> Fagnes, Belgique</p>
             </div>
 
-            <!-- Colonne 2 : Contact -->
             <div class="footer-colonne">
                 <h3>Contact</h3>
                 <p><i class="fa-solid fa-envelope"></i> <a href="mailto:contact@tresorsdesfagnes.be">contact@tresorsdesfagnes.be</a></p>
             </div>
 
-            <!-- Colonne 3 : Réseaux sociaux -->
             <div class="footer-colonne">
                 <h3>Suivez-nous</h3>
-                <a href="https://www.facebook.com/profile.php?id=61555741937819" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="https://www.facebook.com/profile.php?id=61555741937819" target="_blank">
+                    <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
             </div>
 
-            <!-- Colonne 4 : Mentions légales -->
             <div class="footer-colonne">
                 <h3>Mentions légales</h3>
                 <p>Chatterie enregistrée</p>
@@ -374,16 +363,13 @@
 
         </div>
 
-        <!-- Copyright -->
         <div class="footer-copyright">
             <p>© 2025 Trésors des Fagnes - Tous droits réservés</p>
-
         </div>
 
     </footer>
 
     <script src="js/main.js"></script>
-
 
 </body>
 

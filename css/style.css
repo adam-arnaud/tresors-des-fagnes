@@ -63,6 +63,29 @@ header h1 {
 }
 
 /* =============================
+   BANNIÈRE ANNONCE
+   ============================= */
+#banniere {
+    background-color: var(--brun-fonce);
+    color: var(--beige-clair);
+    text-align: center;
+    padding: 0.5rem var(--espacement-m);
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+#banniere a {
+    color: var(--beige-dore);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#banniere a:hover {
+    color: var(--blanc);
+}
+
+/* =============================
    NAVIGATION
    ============================= */
 nav {
@@ -163,11 +186,16 @@ nav a:hover {
     color: var(--brun-doux);
     margin-top: var(--espacement-m);
     margin-bottom: var(--espacement-s);
+    border-left: 3px solid var(--beige-dore);
+    padding-left: 0.8rem;
+    text-align: left;
 }
 
 #a-propos p {
     margin-bottom: var(--espacement-s);
 }
+
+
 
 /* =============================
    SECTION GALERIE
@@ -346,8 +374,9 @@ textarea {
     border-radius: 4px;
     cursor: pointer;
     font-family: var(--police-texte);
-    width: 100%;
     transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
 }
 
 .formulaire-contact button:hover,
@@ -453,6 +482,33 @@ footer {
     60%  { opacity: 0.8; transform: scale(1) rotate(-20deg); }
     100% { opacity: 0; transform: scale(0.5) rotate(-20deg); }
 }
+
+/* =============================
+   SÉPARATEUR DÉCORATIF
+   ============================= */
+.separateur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    background-color: var(--beige-clair);
+}
+
+.separateur::before,
+.separateur::after {
+    content: '';
+    width: 120px;
+    height: 1px;
+    background-color: var(--beige-dore);
+}
+
+.separateur i {
+    color: var(--beige-dore);
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
 
 /* =============================
    RESPONSIVE DESIGN — MOBILE
