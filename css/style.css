@@ -617,6 +617,13 @@ footer {
     color: var(--brun-fonce);
 }
 
+.header-sous-titre {
+    font-size: 0.85rem;
+    color: var(--brun-doux);
+    letter-spacing: 0.15em;
+    margin-top: 0.3rem;
+}
+
 
 /* =============================
    RESPONSIVE DESIGN — MOBILE
