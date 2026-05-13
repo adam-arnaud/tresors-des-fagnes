@@ -509,6 +509,72 @@ footer {
     opacity: 0.8;
 }
 
+/* =============================
+   SECTION FAQ
+   ============================= */
+#faq {
+    background-color: var(--beige-clair);
+    padding: var(--espacement-l) var(--espacement-m);
+    text-align: center;
+}
+
+#faq h2 {
+    font-family: var(--police-titre);
+    font-size: 2rem;
+    color: var(--brun-fonce);
+    margin-bottom: var(--espacement-m);
+}
+
+.faq-liste {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--beige-dore);
+    margin-bottom: 0.5rem;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1rem 0;
+    font-family: var(--police-texte);
+    font-size: 1rem;
+    color: var(--brun-fonce);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: var(--brun-doux);
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+    color: var(--beige-dore);
+}
+
+.faq-question.actif i {
+    transform: rotate(180deg);
+}
+
+.faq-reponse {
+    display: none;
+    padding: 0 0 1rem 0;
+    color: var(--brun-doux);
+    line-height: 1.7;
+}
+
+.faq-reponse.ouverte {
+    display: block;
+}
+
 
 /* =============================
    RESPONSIVE DESIGN — MOBILE

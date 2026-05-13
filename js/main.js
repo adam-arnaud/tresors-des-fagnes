@@ -57,3 +57,25 @@ if (chatonsDispo.length === 0) {
         document.getElementById("galerie").scrollIntoView({ behavior: "smooth" });
     });
 }
+
+// --- FAQ Accordéon ---
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(function (question) {
+    question.addEventListener("click", function () {
+        const reponse = question.nextElementSibling;
+        const estOuverte = question.classList.contains("actif");
+
+        // Ferme toutes les questions
+        questions.forEach(function (q) {
+            q.classList.remove("actif");
+            q.nextElementSibling.classList.remove("ouverte");
+        });
+
+        // Si elle était fermée, on l'ouvre
+        if (!estOuverte) {
+            question.classList.add("actif");
+            reponse.classList.add("ouverte");
+        }
+    });
+});
