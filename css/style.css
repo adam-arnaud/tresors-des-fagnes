@@ -575,6 +575,46 @@ footer {
     display: block;
 }
 
+/* =============================
+   PAGE MENTIONS LÉGALES
+   ============================= */
+#mentions-legales {
+    background-color: var(--beige-clair);
+    padding: var(--espacement-l) var(--espacement-m);
+    max-width: 800px;
+    margin: auto;
+}
+
+#mentions-legales h2 {
+    font-family: var(--police-titre);
+    font-size: 2rem;
+    color: var(--brun-fonce);
+    margin-bottom: var(--espacement-m);
+    text-align: center;
+}
+
+#mentions-legales h3 {
+    font-family: var(--police-titre);
+    color: var(--brun-doux);
+    margin-top: var(--espacement-m);
+    margin-bottom: var(--espacement-s);
+    border-left: 3px solid var(--beige-dore);
+    padding-left: 0.8rem;
+}
+
+#mentions-legales p {
+    margin-bottom: var(--espacement-s);
+    line-height: 1.7;
+}
+
+#mentions-legales a {
+    color: var(--brun-doux);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+#mentions-legales a:hover {
+
 
 /* =============================
    RESPONSIVE DESIGN — MOBILE
